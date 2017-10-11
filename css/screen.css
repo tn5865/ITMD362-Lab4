@@ -191,8 +191,13 @@ img, audio, video {
   http://www.modularscale.com/?22&px&1.667&web&text
 */
 
+body {
+  background-color: #A9A9A9;
+}
+
 html {
-  font-size: 1.375em; /* 22px */
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.4em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
@@ -202,8 +207,72 @@ label {
   display: block;
 }
 
-/* ===== LAYOUT STYLES ====== */
+@media screen and (min-width: 480px) {
+  body, html {
+	min-height:100%;
+  }
+}
 
+/* ===== LAYOUT STYLES ====== */
+h1 {
+  font-size: 160%;
+  font-weight: bold;
+}
+
+h1, p {
+  padding-bottom: 1.182em;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 78px;
+  padding: 26px;
+  border: 0;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: #C0C0C0;
+}
+
+#input-submit {
+  width: 100%;
+  margin: auto;
+}
+
+input[type="email"] {
+  padding-bottom: 1.182em;
+}
+
+input[type="checkbox"] {
+  height: 1em;
+  width: 1em;
+  float: left;
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+input[type="checkbox"] + label {
+  display: inline;
+}
+
+input[type="submit"] {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: #666666;
+}
 /* ===== MODULAR STYLES ===== */
 
+form li {
+  padding-bottom: 1.182em;
+}
+
+#age-verification + label {
+  display: block;
+  padding-left: 30px;
+}
 /* ===== STATE STYLES ======= */
