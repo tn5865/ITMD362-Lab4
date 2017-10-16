@@ -200,7 +200,6 @@ html {
   font-size: 1.4em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
-  text-rendering: optimizeLegibility;
 }
 
 label {
